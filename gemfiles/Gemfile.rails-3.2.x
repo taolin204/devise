@@ -2,7 +2,7 @@ source "http://rubygems.org"
 
 gemspec
 
-gem "rails", "~> 4.0.0.beta", github: "rails/rails", branch: "master"
+gem "rails", "~> 3.2.6"
 gem "omniauth", "~> 1.0.0"
 gem "omniauth-oauth2", "~> 1.0.0"
 gem "rdoc"
@@ -11,7 +11,7 @@ group :test do
   gem "omniauth-facebook"
   gem "omniauth-openid", "~> 1.0.1"
   gem "webrat", "0.7.2", :require => false
-  gem "mocha", "~> 0.13.1", :require => false
+  gem "mocha", "0.10.0", :require => false
 end
 
 platforms :jruby do
@@ -27,6 +27,6 @@ end
 
 platforms :mri_19 do
   group :mongoid do
-    gem "mongoid", github: "mongoid/mongoid", branch: "4.0.0-dev"
+    gem "mongoid", "~> 3.0"
   end
 end
